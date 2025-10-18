@@ -1,0 +1,94 @@
+<html>
+<head>
+    <style>
+        .grid-state{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .b,.g,.v,.bk,.r,.o,.br,.gy,.a{
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 350px;
+            color: white;
+            border-radius: 20px;
+            font-size: 50px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .w,.y{
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 350px;
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+            border-color: grey;
+            font-size: 50px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .b{background-color: rgb(0, 89, 255);border-color: rgb(91, 209, 255);}
+        .g{background-color:rgb(7, 167, 7);border-color:rgb(33, 255, 33);}
+        .w{background-color: white;}
+        .v{background-color: rgb(189, 23, 255);border-color: rgb(214, 65, 255);}
+        .bk{background-color: black;border-color: grey;}
+        .y{background-color: rgb(255, 217, 0);border-color: yellow;}
+        .r{background-color: red;border-color: rgb(255, 73, 73);}
+        .o{background-color: rgb(255, 106, 0);border-color: orange;}
+        .br{background-color: rgb(131, 39, 23);border-color: rgb(217, 86, 46);}
+        .gy{background-color: grey;border-color: rgb(215, 215, 215);}
+
+        .b:hover{font-size: 70px;}
+        .g:hover{font-size: 70px;}
+        .w:hover{font-size: 70px;background-color: rgb(233, 233, 233);border-color: rgb(225, 225, 225);}
+        .v:hover{font-size: 70px;}
+        .bk:hover{font-size: 70px;}
+        .y:hover{font-size: 70px;border-color: rgb(255, 237, 42);}
+        .r:hover{font-size: 70px;}
+        .o:hover{font-size: 70px;}
+        .br:hover{font-size: 70px;;}
+        .gy:hover{font-size: 70px;}
+       
+        h1{
+            font-size: 80px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background:linear-gradient(to right,
+             red,yellow,rgb(0, 255, 0),rgb(0, 247, 255),red);
+             background-clip: text;
+             color:transparent;
+             background-size: 200% auto;
+             animation: gradiantAnimation 3s linear infinite;
+
+        }
+        @keyframes gradiantAnimation{
+            0%{background-position: 200% 50%; }
+            100%{background-position: 0% 50%;}
+        }
+        .b:active{transition: 0ms;font-size:50px;}
+        .g:active{transition: 0ms;font-size:50px;border-style:double;}
+        .w:active{transition: 0ms;font-size:50px;border-style:double;}
+        .v:active{transition: 0ms;font-size:50px;border-style:double;}
+        .bk:active{transition: 0ms;font-size:50px;border-style:double;}
+        .y:active{transition: 0ms;font-size:50px;border-style:double;}
+        .r:active{transition: 0ms;font-size:50px;border-style:double;}
+        .o:active{transition: 0ms;font-size:50px;border-style:double;}
+        .br:active{transition: 0ms;font-size:50px;border-style:double;}
+        .gy:active{transition: 0ms;font-size:50px;border-style:double;}
+    </style>
+</head>
+<body>
+    <h1>Choose a colour</h1>
+    <div class="grid-state">
+        <button class="b"><a class="b" href="blue.html">Blue</a></button>
+        <button class="g"><a class="g" href="green.html">Green</a></button>
+        <button class="w"><a class="w" href="white.html">White</a></button>
+        <button class="v"><a class="v" href="violet.html">Violet</a></button>
+        <button class="bk"><a class="bk" href="black.html">Black</a></button>
+        <button class="y"><a class="y" href="yellow.html">Yellow</a></button>
+        <button class="r"><a class="r" href="red.html">Red</a></button>
+        <button class="o"><a class="o" href="orange.html">Orange</a></button>
+        <button class="br"><a class="br" href="brown.html">Brown</a></button>
+        <button class="gy"><a class="gr" href="grey.html">Grey</a></button>
+    </div>
+</body>
+</html>
